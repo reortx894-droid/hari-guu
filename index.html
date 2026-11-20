@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Teacher's Day 🌷</title>
+<style>
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg,#ffe0ec,#fff1f5,#fce4ff);
+  font-family: Georgia, serif;
+  color: #a34e75;
+  text-align: center;
+  padding: 20px;
+}
+.card {
+  background: #ffffffd9;
+  padding: 30px 23px;
+  border-radius: 25px;
+  max-width: 370px;
+  width: 100%;
+  box-shadow: 0 10px 35px #d98bab55;
+  animation: muncul 1.2s ease;
+}
+@keyframes muncul {
+  from {opacity:0; transform:translateY(25px);}
+  to {opacity:1; transform:translateY(0);}
+}
+h1 { color: #d66b96; }
+.flower { font-size: 35px; }
+button {
+  border: none;
+  padding: 13px 25px;
+  border-radius: 30px;
+  background: #ef91b5;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+#pesan {
+  display: none;
+  line-height: 1.8;
+  margin-top: 20px;
+}
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="flower">🌷🌸🌷</div>
+  <h1>Happy Teacher's Day!</h1>
+  <p>Untuk guru terbaikku 💗</p>
+  <button onclick="buka()">Buka Ucapan 💌</button>
+  <div id="pesan">
+    <h3>Terima Kasih, Guruku! 🥹</h3>
+    Terima kasih telah membimbing kami,
+    mengajarkan banyak hal, dan selalu sabar
+    menghadapi kami.
+
+    <br><br>
+    Jasamu akan selalu kami kenang.
+    Semoga Bapak/Ibu Guru selalu sehat,
+    bahagia, dan sukses.
+
+    <br><br>
+    <b>With Love, Your Student 💗</b>
+    <div class="flower">🌸🌷🦋</div>
+  </div>
+</div>
+<script>
+function buka() {
+  document.getElementById("pesan").style.display = "block";
+}
+</script>
+</body>
+</html>
